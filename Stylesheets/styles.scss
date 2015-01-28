@@ -146,6 +146,7 @@ span{color: red;}
 	background-color: $bkgd-grey;
 	@include border-radius(5px);
 	@include box-shadow(2px, 2px, 5px, $main-color);
+	margin-top: $nav-margin;
 }
 
 #submit:active{
