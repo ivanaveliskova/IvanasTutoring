@@ -11,7 +11,8 @@ $bkgd-clr-quals: #99FFCC;
 $bkgd-grey: #F3F3F3;
 $nav-height: 60px;
 $inside-bkgd: white;
-$nav-margin: 20px;
+$margin: 20px;
+$top-margin: $nav-height+$margin*2;
 $top-heading-font: 40px;
 $mx-width: 800px;
 
@@ -58,12 +59,12 @@ nav{
 
 p{color: $main-color;}
 
-footer{background-color: $bkgd-grey; padding: $nav-margin 0; text-align: center; font-size: 16px;}
+footer{background-color: $bkgd-grey; padding: $margin 0; text-align: center; font-size: 16px;}
 
 /*Specific styles*/
 #navi-bar{max-width: $mx-width; margin: auto;}
 
-#navi-bar li{display: inline-block; margin: $nav-margin 80px;}
+#navi-bar li{display: inline-block; margin: $margin 80px;}
 
 #about-me{background-color: $bkgd-clr-about;}
 
@@ -71,7 +72,7 @@ footer{background-color: $bkgd-grey; padding: $nav-margin 0; text-align: center;
 	width: 100%;
 	max-width: $mx-width;
 	margin: auto;
-	padding: $nav-height+$nav-margin*2 0;
+	padding: $top-margin 0;
 }
 
 #img-of-myself-container {
@@ -95,17 +96,17 @@ footer{background-color: $bkgd-grey; padding: $nav-margin 0; text-align: center;
 
 #name{text-align: center; font-size: $top-heading-font;}
 
-#my-info{margin-top: $nav-margin;}
+#my-info{margin-top: $margin;}
 
 #subjects{background-color: $bkgd-clr-subjects;}
 
 #subjects-title{
 	font-size: $top-heading-font;
 	text-align: center;
-	margin-bottom: $nav-margin;
+	margin-bottom: $margin;
 }
 
-#subjects-container{padding: $nav-height+$nav-margin*2 0;}
+#subjects-container{padding: $top-margin 0;}
 
 #subjects-list{max-width: $mx-width; margin: auto;}
 
@@ -123,35 +124,10 @@ footer{background-color: $bkgd-grey; padding: $nav-margin 0; text-align: center;
 
 #contact-me{background-color: $bkgd-clr-quals;}
 
-#contact-container{max-width: $mx-width; margin: auto; padding: $nav-height+$nav-margin*2 0;}
+#contact-container{max-width: $mx-width; margin: auto; padding: $top-margin 0;}
 
 #contact-title{font-size: $top-heading-font; text-align: center;}
 
-#rates{text-align: center; margin: $nav-margin 0;}
+#rates{text-align: center; margin: $margin 0;}
 
-#contact-form{max-width: 200px; margin: auto;}
-
-#contact-form label{display: block; margin-top: $nav-margin;}
-
-.one-line, textarea{width: 200px; background-color: $bkgd-grey; @include border-radius(5px);}
-
-textarea{height: 100px;}
-
-span{color: red;}
-
-#submit{
-	border: none;
-	font-family: "Lora", serif;
-	font-size: 16px;
-	background-color: $bkgd-grey;
-	@include border-radius(5px);
-	@include box-shadow(2px, 2px, 5px, $main-color);
-	margin-top: $nav-margin;
-}
-
-#submit:active{
-	@include box-shadow(1px, 1px, 5px, $main-color);
-	@include transform-move(1px, 1px);
-}
-
-#submit:focus{outline:none; }
+#email{text-align: center;}

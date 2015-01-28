@@ -174,57 +174,7 @@ footer {
   text-align: center;
   margin: 20px 0; }
 
-#contact-form {
-  max-width: 200px;
-  margin: auto; }
-
-#contact-form label {
-  display: block;
-  margin-top: 20px; }
-
-.one-line, textarea {
-  width: 200px;
-  background-color: #F3F3F3;
-  -webkit-border-radius: 5px;
-  -mos-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px; }
-
-textarea {
-  height: 100px; }
-
-span {
-  color: red; }
-
-#submit {
-  border: none;
-  font-family: "Lora", serif;
-  font-size: 16px;
-  background-color: #F3F3F3;
-  -webkit-border-radius: 5px;
-  -mos-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-box-shadow: 2px 2px 5px #333;
-  -mos-box-shadow: 2px 2px 5px #333;
-  -ms-box-shadow: 2px 2px 5px #333;
-  -o-box-shadow: 2px 2px 5px #333;
-  box-shadow: 2px 2px 5px #333;
-  margin-top: 20px; }
-
-#submit:active {
-  -webkit-box-shadow: 1px 1px 5px #333;
-  -mos-box-shadow: 1px 1px 5px #333;
-  -ms-box-shadow: 1px 1px 5px #333;
-  -o-box-shadow: 1px 1px 5px #333;
-  box-shadow: 1px 1px 5px #333;
-  -webkit-transform: translate(1px, 1px);
-  -ms-transform: translate(1px, 1px);
-  transform: translate(1px, 1px); }
-
-#submit:focus {
-  outline: none; }
+#email {
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
