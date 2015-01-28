@@ -54,13 +54,13 @@ body {
   font-size: 20px; }
 
 a {
-  color: blue; }
+  color: #2E8A2E; }
 
 a:visited {
-  color: blue; }
+  color: #2E8A2E; }
 
 a:hover {
-  color: rgba(0, 0, 255, 0.5); }
+  color: rgba(46, 138, 46, 0.5); }
 
 nav {
   position: fixed;
