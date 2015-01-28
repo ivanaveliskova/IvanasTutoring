@@ -8,7 +8,7 @@ $link-color: #2E8A2E;
 $bkgd-clr-about: #00CCFF;
 $bkgd-clr-subjects: #FFF1D4;
 $bkgd-clr-quals: #99FFCC;
-$bkgd-grey: #E0E0E0;
+$bkgd-grey: #F3F3F3;
 $nav-height: 60px;
 $inside-bkgd: white;
 $nav-margin: 20px;
@@ -30,6 +30,12 @@ $mx-width: 800px;
 	    -ms-box-shadow: $x $y $spread $color;
 	     -o-box-shadow: $x $y $spread $color;
 	        box-shadow: $x $y $spread $color;
+}
+
+@mixin transform-move($x, $y){
+	-webkit-transform: translate($x, $y);
+        -ms-transform: translate($x, $y);
+            transform: translate($x, $y);
 }
 
 /*General Styles*/
@@ -122,3 +128,29 @@ footer{background-color: $bkgd-grey; padding: $nav-margin 0; text-align: center;
 #contact-title{font-size: $top-heading-font; text-align: center;}
 
 #rates{text-align: center; margin: $nav-margin 0;}
+
+#contact-form{max-width: 200px; margin: auto;}
+
+#contact-form label{display: block; margin-top: $nav-margin;}
+
+.one-line, textarea{width: 200px; background-color: $bkgd-grey; @include border-radius(5px);}
+
+textarea{height: 100px;}
+
+span{color: red;}
+
+#submit{
+	border: none;
+	font-family: "Lora", serif;
+	font-size: 16px;
+	background-color: $bkgd-grey;
+	@include border-radius(5px);
+	@include box-shadow(2px, 2px, 5px, $main-color);
+}
+
+#submit:active{
+	@include box-shadow(1px, 1px, 5px, $main-color);
+	@include transform-move(1px, 1px);
+}
+
+#submit:focus{outline:none;}

@@ -50,7 +50,18 @@
 				<div id="contact-container">
 					<p id="contact-title">Contact Me</p>
 					<p id="rates">My rate is $30/hr. If you wish to do 2 or more hours at once, the rate goes to $25/hr. Also, you can prepay for 5 hours at $25/hr.</p>
-					<iframe src="https://docs.google.com/forms/d/16beEW0-GyT0cwKVVw_zbShuEY2Q5-AVk-CO5yEh-icY/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+					<form id="contact-form" method="post" action="index.php">
+						<label>Name<span>*</span></label>
+						<input name="name" class="one-line">
+
+						<label>E-mail<span>*</span></label>
+						<input name="email" type="email" class="one-line">
+
+						<label>Message</label>
+						<textarea name="message"></textarea> 
+
+						<input id="submit" name="submit" type="submit" value="Submit">
+					</form>
 				</div>
 			</section>
 		</main>
