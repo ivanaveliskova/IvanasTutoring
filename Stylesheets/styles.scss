@@ -1,0 +1,122 @@
+/*Reset all browser styles*/
+@import 'reset';
+
+/*Main styling*/
+//Variables
+$main-color: #333;
+$link-color: blue;
+$bkgd-clr-about: #00CCFF;
+$bkgd-clr-subjects: #FFF1D4;
+$bkgd-clr-quals: #99FFCC;
+$bkgd-grey: #E0E0E0;
+$nav-height: 60px;
+$inside-bkgd: white;
+$nav-margin: 20px;
+$top-heading-font: 40px;
+$mx-width: 800px;
+
+//Mixins
+@mixin border-radius($radius){
+	-webkit-border-radius: $radius;
+	   -mos-border-radius: $radius;
+	    -ms-border-radius: $radius;
+	     -o-border-radius: $radius;
+	        border-radius: $radius;
+}
+
+@mixin box-shadow($x, $y, $spread, $color){
+	-webkit-box-shadow: $x $y $spread $color;
+	   -mos-box-shadow: $x $y $spread $color;
+	    -ms-box-shadow: $x $y $spread $color;
+	     -o-box-shadow: $x $y $spread $color;
+	        box-shadow: $x $y $spread $color;
+}
+
+/*General Styles*/
+body{font-family: "Lora", serif; font-size: 20px;}
+
+a{color: $link-color;}
+
+a:visited{color: $link-color;}
+
+a:hover{color: rgba($link-color, .5);}
+
+
+nav{
+	position: fixed;
+	height: $nav-height;
+	background-color: $inside-bkgd;
+	width: 100%;
+	@include box-shadow(0, 3px, 10px, $main-color);
+}
+
+p{color: $main-color;}
+
+footer{background-color: $bkgd-grey; padding: $nav-margin 0; text-align: center; font-size: 16px;}
+
+/*Specific styles*/
+#navi-bar{max-width: $mx-width; margin: auto;}
+
+#navi-bar li{display: inline-block; margin: $nav-margin 80px;}
+
+#about-me{background-color: $bkgd-clr-about;}
+
+#about-container{
+	width: 100%;
+	max-width: $mx-width;
+	margin: auto;
+	padding: $nav-height+$nav-margin*2 0;
+}
+
+#img-of-myself-container {
+	height: 300px;
+	max-width: 300px;
+	width: 100%;
+	border: 5px rgba($main-color, .6) solid;
+	background-image: url("../images/Ivana.jpg");
+	background-size: 150%;
+	background-position: 80% 0;
+	display: inline-block;
+	@include border-radius(100%);
+}
+
+#about-text-container{
+	display: inline-block;
+	vertical-align: 100px;
+	max-width: 450px;
+	margin-left: 10px;
+}
+
+#name{text-align: center; font-size: $top-heading-font;}
+
+#my-info{margin-top: $nav-margin;}
+
+#subjects{background-color: $bkgd-clr-subjects;}
+
+#subjects-title{
+	font-size: $top-heading-font;
+	text-align: center;
+	margin-bottom: $nav-margin;
+}
+
+#subjects-container{padding: $nav-height+$nav-margin*2 0;}
+
+#subjects-list{max-width: $mx-width; margin: auto;}
+
+#subjects-list li{
+	display: inline-block;
+	margin: 10px 5px;
+	text-align: center;
+	border: 3px rgba($main-color, .6) solid;
+	@include border-radius(5px);
+	width: 100%;
+	max-width: 240px;
+	padding: 60px 0;
+	background-color: $inside-bkgd;
+}
+
+#contact-me{background-color: $bkgd-clr-quals;}
+
+#contact-container{max-width: $mx-width; margin: auto; padding: $nav-height+$nav-margin*2 0;}
+
+#contact-title{font-size: $top-heading-font; text-align: center;}
